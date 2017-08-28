@@ -1,5 +1,5 @@
 use_frameworks!
-
+platform :ios, '8.3'
 target 'FirebaseClient_Example' do
   pod 'FirebaseClient', :path => '../'
 

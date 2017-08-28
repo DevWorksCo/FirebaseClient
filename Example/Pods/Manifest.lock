@@ -1,0 +1,16 @@
+PODS:
+  - FirebaseClient (0.1.0)
+
+DEPENDENCIES:
+  - FirebaseClient (from `../`)
+
+EXTERNAL SOURCES:
+  FirebaseClient:
+    :path: ../
+
+SPEC CHECKSUMS:
+  FirebaseClient: 3993933ad8b0dcfd2d6b38f7a2c5bd397d973815
+
+PODFILE CHECKSUM: 4ecaf58fda41dbb2c90a03fba2278e4fce526e09
+
+COCOAPODS: 1.3.1

@@ -1,0 +1,6 @@
+framework module FirebaseClient {
+  umbrella header "FirebaseClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
