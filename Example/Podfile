@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'FirebaseClient_Example' do
+  pod 'FirebaseClient', :path => '../'
+
+  target 'FirebaseClient_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
