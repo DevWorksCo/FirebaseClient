@@ -1,9 +1,9 @@
 {
   "name": "FirebaseClient",
   "version": "0.1.0",
-  "summary": "A short description of FirebaseClient.",
-  "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/josemantilla26/FirebaseClient",
+  "summary": "Build DevWorks apps fast, without managing infrastructure",
+  "description": "Build DevWorks apps fast, without managing infrastructure using FireBase. You never have to right particular code again.",
+  "homepage": "https://github.com/DevWorksCo/FirebaseClient",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,11 +12,30 @@
     "josemantilla26": "jose.mantilla@gmail.com"
   },
   "source": {
-    "git": "https://github.com/josemantilla26/FirebaseClient.git",
+    "git": "https://github.com/DevWorksCo/FirebaseClient.git",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "FirebaseClient/Classes/**/*"
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "\"$(PODS_ROOT)/\""
+  },
+  "pod_target_xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(SRCROOT)/**",
+    "OTHER_LDFLAGS": "$(inherited) -undefined dynamic_lookup"
+  },
+  "source_files": "FirebaseClient/Classes/**/*",
+  "frameworks": [
+    "UIKit",
+    "SafariServices",
+    "Security",
+    "SystemConfiguration"
+  ],
+  "dependencies": {
+    "FBSDKLoginKit": [
+
+    ]
+  },
+  "vendored_frameworks": "Frameworks/Firebase/Database.framework"
 }
